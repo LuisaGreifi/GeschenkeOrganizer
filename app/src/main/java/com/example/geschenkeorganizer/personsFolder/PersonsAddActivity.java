@@ -1,4 +1,4 @@
-package com.example.geschenkeorganizer.PersonsFile;
+package com.example.geschenkeorganizer.personsFolder;
 
 import android.os.Bundle;
 
