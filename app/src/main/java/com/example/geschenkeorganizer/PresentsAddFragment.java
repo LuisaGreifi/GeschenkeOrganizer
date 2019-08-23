@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -42,13 +43,14 @@ public class PresentsAddFragment extends Fragment implements View.OnClickListene
     public void onClick(View v) {
         firstName = getView().findViewById(R.id.editText_firstName);
         surName = getView().findViewById(R.id.editText_surName);
+        description = getView().findViewById(R.id.editText_description);
         if (!firstName.getText().toString().isEmpty() && !surName.getText().toString().isEmpty() && !description.getText().toString().isEmpty()) {
             saveEntry(v);
             mCallback.onListItemChanged();
+        } else {
+            Toast.makeText(getActivity(), "Du musst noch eine Person und/oder die Beschreibung des Geschenks eingeben.",
+                    Toast.LENGTH_SHORT).show();
         }
-
-        /*todo: else ... String s = "Du musst noch eine Person eingeben."; Toast.makeText(PresentsAddFragment.this, s,
-                    Toast.LENGTH_SHORT).show(); */
     }
 
     private void saveEntry(View v) {

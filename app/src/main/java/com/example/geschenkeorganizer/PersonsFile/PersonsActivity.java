@@ -1,4 +1,4 @@
-package com.example.geschenkeorganizer;
+package com.example.geschenkeorganizer.PersonsFile;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PersonsActivity extends AppCompatActivity {
+import com.example.geschenkeorganizer.R;
+
+public class PersonsActivity extends AppCompatActivity implements  PersonsListFragment.OnListItemSelectedListener {
+
+    @Override
+    public void onListItemSelected(int id) {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +33,4 @@ public class PersonsActivity extends AppCompatActivity {
             }
         });
     }
-
 }

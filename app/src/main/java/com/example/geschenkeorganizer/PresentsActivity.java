@@ -22,7 +22,7 @@ public class PresentsActivity extends AppCompatActivity implements  PresentsList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presents);
 
-        Button addButton = findViewById(R.id.button_addPerson);
+        Button addButton = findViewById(R.id.button_addPresent);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

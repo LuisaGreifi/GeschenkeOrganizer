@@ -16,14 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PersonsActivity">
 
+        <activity android:name=".PersonsFile.PersonsActivity">
         </activity>
+        <activity android:name=".PersonsFile.PersonsAddActivity">
+        </activity>
+
         <activity android:name=".PresentsActivity">
         </activity>
-        <activity android:name=".InspirationActivity">
-        </activity>
         <activity android:name=".PresentsAddActivity">
+        </activity>
+
+        <activity android:name=".InspirationActivity">
         </activity>
 
     </application>
