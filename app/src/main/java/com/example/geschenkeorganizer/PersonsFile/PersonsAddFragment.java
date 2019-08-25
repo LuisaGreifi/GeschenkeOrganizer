@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.fragment.app.Fragment;
+import android.app.Fragment;
 
 import com.example.geschenkeorganizer.R;
 

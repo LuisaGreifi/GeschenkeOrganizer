@@ -1,6 +1,5 @@
 package com.example.geschenkeorganizer.PersonsFile;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,16 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.ListFragment;
+import android.app.ListFragment;
 
-import com.example.geschenkeorganizer.Present;
 import com.example.geschenkeorganizer.R;
 
 public class PersonsListFragment extends ListFragment {
 
     private OnListItemSelectedListener mCallback;
-
 
     public interface OnListItemSelectedListener {
         public void onListItemSelected(int id);

@@ -9,8 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import androidx.fragment.app.ListFragment;
+import android.app.ListFragment;
 
 // Code von NoteTaker-Übung
 

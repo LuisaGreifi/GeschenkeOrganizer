@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.fragment.app.Fragment;
+import android.app.Fragment;
 
 public class PresentsAddFragment extends Fragment implements View.OnClickListener {
 
@@ -57,6 +57,10 @@ public class PresentsAddFragment extends Fragment implements View.OnClickListene
         findViewsById();
         getInformation(v);
         //todo: Informationen in Datenbank speichern
+    }
+
+    public void loadEmptyAddView() {
+        //todo: alle Views ohne Text etc. laden
     }
 
     private void findViewsById() {
