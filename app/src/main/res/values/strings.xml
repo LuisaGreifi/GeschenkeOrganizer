@@ -4,7 +4,8 @@
     <string name="app_name">GeschenkeOrganizer</string>
 
     //InfoTexts
-    <string name="text_noPresents">GeschenkeOrganizer</string>
+    <string name="text_noPresents">Es sind keine Geschenke vorhanden.</string>
+    <string name="text_noPersons">Es sind keine Personen vorhanden.</string>
 
     //StringArrays
     <string-array name="names">

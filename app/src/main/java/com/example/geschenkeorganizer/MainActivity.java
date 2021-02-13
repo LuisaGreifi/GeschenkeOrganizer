@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.geschenkeorganizer.PersonsFile.PersonsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     //Variablen und Konstanten

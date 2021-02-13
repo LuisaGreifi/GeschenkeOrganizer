@@ -9,8 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import androidx.fragment.app.ListFragment;
+import android.app.ListFragment;
 
 // Code von NoteTaker-Übung
 
@@ -38,20 +37,19 @@ public class PresentsListFragment extends ListFragment {
     }
 
     protected void populateList() {
-        //todo: TextView oder Toast für kein Geschenk vorhanden statt dummy
+        //todo: mit Datenbank verbinden (für Array)
 
-        //todo: mit Datenbank verbinden (für ArrayList)
         Present[] values = new Present[0];
         if (values.length == 0) {
-            Present dummy = new Present("Geschenke", "", "nicht vorhanden", "", "", false, false, false, 0.0);
-            dummy.setId(-1);
-            values = new Present[]{dummy};
-
+            Toast.makeText(getActivity(), R.string.text_noPresents,
+                    Toast.LENGTH_LONG).show();
         }
-        ArrayAdapter<Present> adapter =
-                new ArrayAdapter<Present>(getActivity(), android.R.layout.simple_list_item_1,
-                        values);
-        setListAdapter(adapter);
+        else {
+            ArrayAdapter<Present> adapter =
+                    new ArrayAdapter<Present>(getActivity(), android.R.layout.simple_list_item_1,
+                            values);
+            setListAdapter(adapter);
+        }
     }
 
     @Override
